@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Quiz para programadores</title>
+        <meta name="description" content="Um quiz para testar seus conhecimentos sobre programação"
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Quiz interativo para programadores</h1>
+            <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>
+        </header>
+        <main>
+            <!--Introdução-->
+            <section>
+                <h2>Sobre esse quiz</h2>
+                <p>Este quiz foi desenvolvido por Caio Fernando, <strong>conhecido nas redes como _ocaiozz</strong>, para testar seus conhecimentos em programação, <em>como linguagens de programação, conceitos básicos e mais</em></p>
+                <p>você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data. <br>Desafie-se com este quiz!</p>
+                <p>você poderá encontrar alguns acrônimos como <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que são comumente usados em questôes ao desenvolvimento web</p>
+            </section>
+            <!--Pergunta 1: múltipla escolha-->
+            <section>
+                <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web?</h2>
+                <form>
+
+                <input type="radio" value="Python" id="p1a"
+                name="pergunta1">
+                <label for="p1a">Python</label>
+
+                <input type="radio" value="HTML" id="p1b"
+                name="pergunta1">
+                <label for="p1b">HTML</label><br>
+
+                <input type="radio" value="Javascript" id="p1c"
+                name="pergunta1">
+                <label for="p1c">Javascript</label>
+
+                <input type="radio" value="Ruby" id="p1d"
+                name="pergunta1">
+                <label for="p1d">Ruby</label>
+                
+                </form>
+            </section>
+            <!--Pergunta 2: texto-->
+            <section>
+                <h2>Pergunta 2: Na URL https://www.google.com, o trecho "google.com" é o ...
+                </h2>
+                <form>
+                <input type="text" id="=p2" name="pergunta2"
+                placeholder="Digite sua resposta...">
+                </form> 
+            </section>
+            <!--Pergunta 3: senha-->
+            <section>
+                <h2>Pergunta 3: Escreva um exemplo de senha forte </h2>
+                <form>
+                    <input type="password" id="p3" 
+                    name="pergunta3" placeholder="Digite uma senha...">
+                </form>
+            </section>
+            <!--Pergunta 4: data-->
+            <section>
+                <h2>Pergunta 4: Em que ano HTML lançou sua primeira versão?</h2>
+                <form>
+                    <input type="date" name="pergunta4" id="p4">
+                </form>
+                </section>
+                <!--Pergunta 5: seleção múltipla-->
+                <section>
+                    <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+                <form>
+                    <input type="checkbox" id="p5a"
+                    name="pergunta5" value="Javascript">
+                    <label for="p5a">Javascript</label>
+
+                        <input type="checkbox" id="p5b"
+                    name="pergunta5" value="Java">
+                    <label for="p5b">Java</label><br>
+
+                        <input type="checkbox" id="p5c"
+                    name="pergunta5" value="HTML">
+                    <label for="p5c">HTML</label>
+
+                        <input type="checkbox" id="p5d"
+                    name="pergunta5" value="CSS">
+                    <label for="p5d">CSS</label>
+                </form>
+                </section>
+                <!--Pergunta 6:-->
+                <section>
+                    <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+                    <form>
+                        <input type="file" id="p6" name="pergunta6"
+                    </form>
+                </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu Te Amo</title>
+</head>
+<body>
+    <div id="conteúdo">
+        <h3>Eu te amo, você também me ama?</h3>
+        <button class="btn" onClick="sim()">Sim</button>
+        <button class="btn" onClick="desvia(this)" onmouseover="desvia(this)">Claro que não mlk, c é um lixo</button>
+    </div>
+</body>
+<style>
+    #conteúdo {
+    background: #ff7a7a;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.btn {
+    color: white;
+    background: black;
+    border: none;
+    padding: 10px;
+    border-radius: 11px;
+}
+
+</style>
+
+<script>
+function sim(){
+    alert("Ebaa, melhorou meu dia!");
+}
+
+function desvia(t){
+    var btn = t;
+    btn.style.position = 'absolute';
+    btn.style.top = randomNumber(0, window.innerHeight - btn.offsetHeight) + 'px';
+    btn.style.left = randomNumber(0, window.innerWidth - btn.offsetWidth) + 'px';
+}
+
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+</script>
+</html>
